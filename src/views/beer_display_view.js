@@ -17,16 +17,18 @@ BeerDetail.prototype.createBeerDetail = function (beer) {
     const beerDescription = document.createElement('p')
     beerDescription.textContent = beer.description
     beerDetail.appendChild(beerDescription)
-    
+
+   
+
     return beerDetail
 
 }
 
-BeerDetail.prototype.createDetailListItem = function (label, property) {
-    const element = document.createElement('li')
-    element.textContent = `${label}: ${property}`;
-    return element;
-}
+// BeerDetail.prototype.createDetailListItem = function (label, property) {
+//     const element = document.createElement('li')
+//     element.textContent = `${label}: ${property}`;
+//     return element;
+// }
 
 
 

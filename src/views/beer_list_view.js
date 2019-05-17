@@ -11,6 +11,7 @@ BeerList.prototype.bindEvents = function () {
     PubSub.subscribe('Beers:beers-ready', (event) => {
         this.clearList();
         this.renderBeerDetails(event.detail)
+        // console.log(event.detail)
     })
 }
 
