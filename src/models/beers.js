@@ -10,7 +10,7 @@ Beers.prototype.getData = function () {
     request.get().then((data) => {
         this.beersData = data;
         PubSub.publish('Beers:beers-ready', this.beersData);
-        console.log(this.beersData)
+        // console.log(this.beersData)
       }); 
 }
 
