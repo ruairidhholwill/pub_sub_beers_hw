@@ -10,8 +10,14 @@ BeerDetail.prototype.createBeerDetail = function (beer) {
     beerName.textContent = beer.name
     beerDetail.appendChild(beerName)
 
-    
+    const beerTagline = document.createElement('h4')
+    beerTagline.textContent = beer.tagline
+    beerDetail.appendChild(beerTagline)
 
+    const beerDescription = document.createElement('p')
+    beerDescription.textContent = beer.description
+    beerDetail.appendChild(beerDescription)
+    
     return beerDetail
 
 }
